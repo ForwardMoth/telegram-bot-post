@@ -19,8 +19,39 @@
 - Библиотеки языков программирования (Python, Java, Ruby, Javascript) 
 - Сайты-конструкторы Telegram-ботов 
 
-В статье будет рассмотрен способ создание _Telegram_-бота с помощью сайта-конструктора [Robochat!](https://robochat.io/price/)
+#### В статье будет рассмотрен способ создание _Telegram_-бота с помощью сайта-конструктора [Robochat!](https://robochat.io/price/)
 
 ## Создание своего Telegram-бота
 
-![Screen Recording (04 05 2023 18-49-54)](https://user-images.githubusercontent.com/63316070/236263069-62985acc-3e9c-4db9-96b7-56dd17f6d465.gif)
+Как ни странно чтобы создать своего _Telegram_-бота нужно использовать _Telegram_-бота [BotFather](https://t.me/BotFather). 
+BotFather использует Английский язык, но это не является большой преградой для создания бота и его настройки. 
+
+![BotFatherExample](https://user-images.githubusercontent.com/63316070/236292375-3243fd33-850a-4a32-84a3-0fb2ee6cca84.gif)
+
+Заходим в _BotFather_ и пишем команду ```/newbot```. Затем _BotFather_ просит вас ввести название вашего пользователя. Вы можете придумать своё, в данном случае использовано
+имя ```MyHelloBot```. Далее _BotFather_ просит ввести имя пользователя. **Важно!** Имя пользователя должно **заканчиваться** на ```bot``` и **не совпадать** c существующими именами. 
+
+В конце выполучаете сообщение: _Done! Congratulations on your new bot_, где поздравляют вас с созданием нового бота! 
+Кроме того, в сообщении содержится адрес вашего бота ```http://t.me/my_new_hello_bot``` и токен. **Токен** - это код, по которому _Telegram_ идентифицирует вашего бота. 
+
+#### Важно! Не сообщайте свой токен никому, иначе вашим ботом могут воспользоваться. 
+
+## Использование конструктора Robochat!
+
+**Копируем токен и вставляем в Robochat для привязки нашего бота.** 
+
+
+![RobochatAuth](https://user-images.githubusercontent.com/63316070/236292468-df94f145-0f61-426d-a79a-46034bbd30fc.gif)
+
+**Давайте задайте зададим базовый сценарий для команды ```/start```.**
+
+![StartExample](https://user-images.githubusercontent.com/63316070/236286261-8c6c6e1e-9be7-48b8-bb87-a8d7b208bfc4.gif)
+
+**Зададим команды ```/today``` и ```/question```.**
+
+![CommandsExample](https://user-images.githubusercontent.com/63316070/236288405-9ae33ce4-6542-40d0-b2d6-546ed5395bea.gif)
+
+**Проверим работу команд в боте.** 
+
+![CommandsWorkExample](https://user-images.githubusercontent.com/63316070/236292953-49e84610-e4d0-4071-82b1-03ce2764534c.gif)
+
